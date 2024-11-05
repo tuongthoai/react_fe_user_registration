@@ -51,8 +51,8 @@ pnpm-debug.log*
 Thumbs.db
 
 # Tailwind CSS output
-tailwind.config.js
-postcss.config.js
+# tailwind.config.js
+# postcss.config.js
 
 # Environment variables
 .env
