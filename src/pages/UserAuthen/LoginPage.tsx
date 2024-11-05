@@ -17,7 +17,7 @@ const LoginPage: React.FC = () => {
   const tok = localStorage.getItem("token");
 
   const navigate = useNavigate(); // Hook for navigation
-  const url = "http://" + import.meta.env.VITE_API_BASE_URL + "/user/login";
+  const url = import.meta.env.VITE_API_BASE_URL + "/user/login";
   const onSubmit = async (data: LoginFormInputs) => {
     try {
       const response = await fetch(url, {

@@ -28,7 +28,7 @@ const RegisterPage: React.FC = () => {
   const onSubmit = async (data: RegisterFormInputs) => {
     // Remove confirmPassword from data since it's not part of the backend DTO
     const HOST = import.meta.env.VITE_API_BASE_URL;
-    const url = "http://" + HOST + "/user/register";
+    const url = HOST + "/user/register";
     try {
       const response = await fetch(url, {
         method: "POST",
